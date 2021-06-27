@@ -8,7 +8,7 @@ public class SearchCrtweb {
 
     @Then("Find a {string} website and go to it")
     public void findAWebsiteAndGoToIt(String arg0) {
-        basic.SearchGoogle();
+        basic.searchGoogle();
         basic.crtwebPageGoIt(arg0);
     }
 }

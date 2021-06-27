@@ -5,12 +5,11 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BasicClass {
-
-    public void SearchGoogle() {
-        $(By.xpath("//input[@title=\"Поиск\"]")).setValue("crtweb.ru").pressEnter();
+    public void searchGoogle() {
+        $(By.xpath("//input[@class=\"gLFyf gsfi\"]")).setValue("crtweb.ru").pressEnter();
     }
 
     public void crtwebPageGoIt(String text) {
-        $(By.xpath("//*[contains(text(), \"" + text + "\")]")).click();
+        $(By.xpath("//h3[contains(text(), \"" + text + "\")]")).click();
     }
 }
